@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Prakhar Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #007ACC;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #005EA6;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #003f73;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .profile-photo {
+            width: 200px; /* Set a fixed width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make it circular */
+            display: block;
+            margin: 1rem auto; /* Center the photo */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-photo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #005EA6;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        .page {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .page.about {
+            animation-name: slideInLeft;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="page about">
+            <h2>Introduction</h2>
+            <p>I'm Prakhar Sharma, a BCA Graduate from D.Y. Patil International University, passionate about technology and continuous learning. I specialize in cloud computing, mobile development, and web technologies, with hands-on experience in AWS, Azure, and modern programming languages like Java and Python.</p>
+            <img src="Photo.jpg" alt="Prakhar Sharma Profile Photo" class="profile-photo">
+            <p><strong>Connect with me:</strong></p>
+            <p><a href="https://www.linkedin.com/in/prakhar-a-sharma-03b722282" target="_blank">LinkedIn</a></p>
+            <p><a href="https://github.com/Techprakhar" target="_blank">GitHub</a></p>
+            <p><a href="Prakhar_Sharma_Resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
+        </section>
+
+        <section>
+            <h2>My Journey</h2>
+            <p>Over the past few years, I've worked on a variety of projects that have enhanced my technical expertise and problem-solving skills. I've also completed workshops and certifications that have enriched my knowledge and ability to adapt to new technologies.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Prakhar Sharma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
