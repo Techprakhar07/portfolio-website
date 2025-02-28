@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -138,3 +139,145 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Prakhar Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #007ACC;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #005EA6;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #003f73;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            opacity: 0; /* Start as hidden */
+        }
+        section.show {
+            animation: slideInRight 1s forwards; /* Apply animation */
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        h1, h2, h3 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .project {
+            margin-bottom: 1.5rem;
+        }
+        img {
+            max-width: 100%; /* Limits the image width */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 12px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #005EA6;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body onload="addAnimation()">
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="projectsSection">
+            <h2>Completed Projects</h2>
+            <div class="project">
+                <h3>PG Nest App</h3>
+                <p>Developed an application for students to book PGs and hostels with features like property listing, payment gateway integration, and booking functionalities.</p>
+                <p><strong>Technologies Used:</strong> Android Studio, Firebase, Razorpay API</p>
+                <img src="PG Nest App.jpg" alt="PG Nest App Screenshot">
+                <p><a href="app-debug.apk" target="_blank">Download the APK</a></p>
+            </div>
+            <div class="project">
+                <h3>E-Commerce Website</h3>
+                <p>Designed an e-commerce platform for saree booking. Integrated functionalities for product search, selection, and booking.</p>
+                <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Firebase</p>
+                <img src="E-commerce Website.png" alt="E-Commerce Website Screenshot">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Prakhar Sharma. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addAnimation() {
+            document.getElementById('projectsSection').classList.add('show');
+        }
+    </script>
+</body>
+</html>
+>>>>>>> faaa12e (Initial commit)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -176,3 +177,183 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Prakhar Sharma</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #007ACC;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #005EA6;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #003f73;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            opacity: 0; /* Start as hidden */
+            transform: translateY(20px); /* Initial position */
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        section.show {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
+        .certificate {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .certificate:nth-child(even) {
+            flex-direction: row-reverse;
+            animation-name: slideInLeft;
+        }
+        .certificate:nth-child(odd) {
+            flex-direction: row;
+            animation-name: slideInRight;
+        }
+        .certificate img {
+            max-width: 45%; /* Adjust width */
+            height: auto;
+            border-radius: 12px;
+            margin: 1rem;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+        .certificate img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .certificate div {
+            flex: 1;
+            padding: 1rem;
+        }
+        footer {
+            background-color: #005EA6;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body onload="addAnimation()">
+    <header>
+        <h1>My Achievements</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="achievementsSection">
+            <h2>Certificates and Recognition</h2>
+            <div class="certificate">
+                <div>
+                    <h3>AWS Bootcamp</h3>
+                    <p>Completed a 6-day AWS bootcamp organized by D.Y. Patil International University.</p>
+                </div>
+                <img src="AWS Certificste.png" alt="AWS Certificate">
+            </div>
+            <div class="certificate">
+                <div>
+                    <h3>Azure Bootcamp</h3>
+                    <p>Completed a 12-day Azure bootcamp organized by the Clydex Club of D.Y. Patil International University.</p>
+                </div>
+                <img src="Azure Certificate.jpg" alt="Azure Certificate">
+            </div>
+            <div class="certificate">
+                <div>
+                    <h3>Linux Workshop</h3>
+                    <p>Participated in a 3-day Linux workshop organized by the Clydex Club.</p>
+                </div>
+                <img src="Linux Certificate.png" alt="Linux Workshop Certificate">
+            </div>
+            <div class="certificate">
+                <div>
+                    <h3>Other Achievements</h3>
+                    <p>Additional certifications and awards for various projects and participation in workshops.</p>
+                </div>
+                <img src="AI Workshop Certificate.png" alt="Other Achievements">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Prakhar Sharma. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addAnimation() {
+            document.getElementById('achievementsSection').classList.add('show');
+        }
+    </script>
+</body>
+</html>
+>>>>>>> faaa12e (Initial commit)
